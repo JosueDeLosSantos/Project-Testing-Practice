@@ -24,3 +24,9 @@ test("adds '5' and '5' to equal '1'", () => {
 test("adds '5' and '5' to equal '25'", () => {
   expect(testMod.calculator.multiply(5, 5)).toBe(25);
 });
+test("takes a string and a shift factor and returns it with each character “shifted”", () => {
+  expect(testMod.caesarCipher("house", 1)).toBe("Ipvtf");
+});
+test("takes a string and a shift factor and returns it with each character “shifted”", () => {
+  expect(testMod.caesarCipher("uh, awsome!", 25)).toBe("Tg, zvrnld!");
+});
