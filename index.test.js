@@ -30,3 +30,11 @@ test("takes a string and a shift factor and returns it with each character “sh
 test("takes a string and a shift factor and returns it with each character “shifted”", () => {
   expect(testMod.caesarCipher("uh, awsome!", 25)).toBe("Tg, zvrnld!");
 });
+test("takes an array of numbers and returns  an object containing its: average, min, max, length", () => {
+  expect(testMod.analyzeArray([1, 8, 3, 4, 2, 6])).toEqual({
+    average: 4,
+    min: 1,
+    max: 8,
+    length: 6,
+  });
+});
